@@ -1,0 +1,60 @@
+.opie-portfolio { position:relative;overflow:hidden;width:auto;padding:0;margin:0 auto;}
+.opie-portfolio .o-inner-wrapper { position:relative;display:block;height:195px;height:1600px;width:100%;background:#FFF;margin:0 auto;}
+.opie-portfolio .o-box .o-cover,.opie-portfolio .o-box .o-cover-bg,.opie-portfolio .o-box .o-cover-text,.opie-portfolio .o-box.mouseOn .o-cover-text{ position:absolute;top:0;left:0;height:100%;width:100%;overflow:hidden;display:block;}
+/* Here you can change the cover background */
+.opie-portfolio .o-box .o-cover-bg{background:#009d8a;-webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; -ms-transition: all 0.5s ease; transition: all 0.5s ease;}
+/* Here you can change the opacity of the mouse over background opacity */
+.opie-portfolio .o-box.mouseOn .o-cover-bg{-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";filter: alpha(opacity=85);-moz-opacity: 0.85;-khtml-opacity: 0.85;opacity: 0.85;}
+.opie-portfolio .o-box.mouseOut .o-cover-bg,.opie-portfolio .o-box .o-cover-bg{ -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter: alpha(opacity=0);-moz-opacity: 0;-khtml-opacity: 0;opacity: 0;}
+.opie-portfolio .o-box .o-cover-text,.opie-portfolio .o-box.mouseOut .o-cover-text{display:none}
+.opie-portfolio .o-box.active .o-cover{ display:none;}
+
+.opie-portfolio .o-box {width:20%;height:20%;margin:0;padding:0;background:#FFF;display:inline-block;vertical-align:top;position:absolute;left:0px;top:0px;cursor:pointer;z-index:101;overflow:hidden;}
+.opie-portfolio .o-box.active {cursor:auto;}
+.opie-portfolio .o-box img.o-big-image{ width:auto;height:100%;max-width:none !important;z-index:98}
+.opie-portfolio .o-box.active img.o-big-image{ display:block;width:auto;height:auto;}
+.opie-portfolio .o-box .o-big-image-wrapper{ position:relative;margin:0;padding:0px;width:auto;height:auto;overflow:hidden;}
+.opie-portfolio .o-box.zoomed .o-big-image-wrapper{width:auto !important;height:auto !important}
+.opie-portfolio .o-box img.o-thumb-image{ position:absolute;top:0;left:0;border:0;width:100%;height:auto;background:none;max-width:195px;max-height:195px}
+.opie-portfolio .o-box img.o-thumb-image.auto{ position:absolute;top:0;left:0;border:0;max-width:none !important;max-height:none !important}
+.opie-portfolio .o-box img.o-thumb-image.auto.width{ width:100%;height:auto;top:50%;}
+.opie-portfolio .o-box img.o-thumb-image.auto.height{ width:auto;height:100%;left:50%;}
+.opie-portfolio .o-box h2, .opie-portfolio .o-box h3, .opie-portfolio .o-box p { padding:20px 40px 0 20px;color:#fff;line-height:16px;font-size:14px;font-weight:normal;margin:0 }
+.opie-portfolio .o-box .big{ display:none;}
+.opie-portfolio .o-box .loader {background: #009d8a url('pics/loader.gif') no-repeat center center;position:absolute;left:0;top:0;width:100%;height:100%;z-index:100;}
+.opie-portfolio .o-box .o-enlarge {z-index:99;position:absolute;right:20px;bottom:40px;display:none}
+.opie-portfolio .o-box.active .o-enlarge {display:block;color:#1ABC9C;background: transparent url('pics/openInfo.png') no-repeat center center;width:30px;height:30px;}
+.opie-portfolio .o-box.active .o-enlarge.opened {background: transparent url('pics/closeInfo.png') no-repeat center center;}
+.opie-portfolio .o-box.active .o-enlarge span{display:none}
+.opie-portfolio .o-box .o-extra-info {width:100%;z-index:100;display:none;position:relative;}
+
+.opie-portfolio .o-box .o-toolbar {z-index:99;position:absolute;left:0px;top:-50px;height:50px;background:#000;width:100%;display:block;margin:0px;padding:10px 0 0 10px;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;}
+.opie-portfolio .o-box.active.mouseOn .o-toolbar {top:0px;}
+.opie-portfolio .o-box.active.mouseOut .o-toolbar{top:-50px;}
+.opie-portfolio .o-box .o-toolbar li {float:left;margin-left:5px;list-style:none;display:none;}
+.opie-portfolio .o-box.active .o-toolbar a{display:block;width:29px;height:29px;}
+.opie-portfolio .o-box.active .o-toolbar a span{display:none;}
+.opie-portfolio .o-box.active .o-toolbar .o-zoomIn a{background: transparent url('pics/iconZoomIn.png') no-repeat center center}
+.opie-portfolio .o-box.active .o-toolbar .o-zoomOut a{background: transparent url('pics/iconZoomOut.png') no-repeat center center}
+.opie-portfolio .o-box.active .o-toolbar .o-detailsIn a{background: transparent url('pics/iconInfo.png') no-repeat center center}
+.opie-portfolio .o-box.active .o-toolbar .o-detailsOut a{background: transparent url('pics/iconClose.png') no-repeat center center}
+.opie-portfolio .o-box.active .o-toolbar .o-link a{background: transparent url('pics/iconLink.png') no-repeat center center}
+
+.opie-portfolio .o-box .o-extra-info h3,.opie-portfolio .o-box .o-extra-info p{color:#000}
+
+.galleryNav {border-bottom:2px solid #000;width:73%;margin:0 auto;height:45px;}
+.galleryNav li {float:left;list-style:none;margin-right:10px;padding-top:15px;}
+.galleryNav li.last {margin:0;}
+.galleryNav li a.active {color:#000;}
+
+@media all and (max-width: 768px) {
+    .galleryNav {height:120px;}
+    .galleryNav li
+    {
+        margin-right:5px;
+    }
+}
+@media all and (min-width: 768px) {
+    .galleryNav {height:75px;}
+    .galleryNav li {margin-right:5px;}
+} 
