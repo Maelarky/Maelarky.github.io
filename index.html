@@ -24,6 +24,7 @@
     <link type="text/css" rel="stylesheet" href="core/jQuery.Opie.PortfolioGallery.css" />
     <link type="text/css" rel="stylesheet" href="assets/css/gallery.css" />
 
+    <link href='core/dist/simplelightbox.min.css' rel='stylesheet' type='text/css'>
 
     <style>
       .opie-portfolio {
@@ -98,68 +99,27 @@
 
     <section id="portfolio" class="section inverted">
 </br><h2><strong>PORTFOLIO</strong></h2>
-     <div class="container">
-            <div class="filtering">
-          <ul class="galleryNav" id="portfolioNav" align="center">
-              <li><a class="active" href="#">All</a></li>
-              <li><a href="#" data-opie-filter="first">Marketing and Identity</a></li>
-              <li><a href="#" data-opie-filter="second">Ceramics</a></li>
-              <li><a href="#" data-opie-filter="third">Fine Arts and Illustrations</a></li>
-          </ul>
-      </div>
-        </div>
-        <div class="opie-portfolio">
-        <div class="o-inner-wrapper">
-            <div class="o-box" data-opie-filter="first">
-                <img alt="" src="core/t.png" data-opie-src="assets/img/gallery/marketing/1.png" class="o-big-image" />
-                <div class="o-cover">
-                    <img alt="" src="core/t.png" data-opie-src="assets/img/gallery/marketing/1.png"class="o-thumb-image" />
-                    <div class="o-cover-bg"></div>
-                </div>
-            </div>
-            <div class="o-box" data-opie-filter="first">
+		<div class="gallery">
+			<a href="assets/img/gallery/marketing/1.png" class="big">
+              <img alt="" src="assets/img/gallery/marketing/1.png"/>
+      </a>
+			<a href="assets/img/gallery/marketing/2.jpg">
+              <img alt="" src="assets/img/gallery/marketing/2.jpg"/>
+      </a>
+			<a href="assets/img/gallery/marketing/3.jpg">
+              <img alt="" src="assets/img/gallery/marketing/3.jpg"/>
+      </a>
+			<a href="assets/img/gallery/marketing/4.jpg">
+              <img alt="" src="assets/img/gallery/marketing/4.jpg"/>
+      </a>
+			<div class="clear"></div>
+                <!--
                 <img alt="" src="core/t.png" data-opie-src="assets/img/gallery/marketing/2.jpg" class="o-big-image" />
-                <div class="o-cover">
-                    <img alt="" src="core/t.png" data-opie-src="assets/img/gallery/marketing/2.jpg"class="o-thumb-image" />
-                    <div class="o-cover-bg"></div>
-                </div>
-            </div>
-            <div class="o-box" data-opie-filter="first">
                 <img alt="" src="core/t.png" data-opie-src="assets/img/gallery/marketing/3.jpg" class="o-big-image" />
-                <div class="o-cover">
-                    <img alt="" src="core/t.png" data-opie-src="assets/img/gallery/marketing/3.jpg"class="o-thumb-image" />
-                    <div class="o-cover-bg"></div>
-                </div>
-            </div>
-            <div class="o-box" data-opie-filter="first">
                 <img alt="" src="core/t.png" data-opie-src="assets/img/gallery/marketing/4.jpg" class="o-big-image" />
-                <div class="o-cover">
-                    <img alt="" src="core/t.png" data-opie-src="assets/img/gallery/marketing/4.jpg"class="o-thumb-image" />
-                    <div class="o-cover-bg"></div>
-                </div>
-            </div>
-            <div class="o-box" data-opie-filter="first">
                 <img alt="" src="core/t.png" data-opie-src="assets/img/gallery/marketing/5.jpg" class="o-big-image" />
-                <div class="o-cover">
-                    <img alt="" src="core/t.png" data-opie-src="assets/img/gallery/marketing/5.jpg"class="o-thumb-image" />
-                    <div class="o-cover-bg"></div>
-                </div>
-            </div>
-            <div class="o-box" data-opie-filter="first">
                 <img alt="" src="core/t.png" data-opie-src="assets/img/gallery/marketing/6.jpg" class="o-big-image" />
-                <div class="o-cover">
-                    <img alt="" src="core/t.png" data-opie-src="assets/img/gallery/marketing/6.jpg"class="o-thumb-image" />
-                    <div class="o-cover-bg"></div>
-                </div>
-            </div>
-            <div class="o-box" data-opie-filter="first">
                 <img alt="" src="core/t.png" data-opie-src="assets/img/gallery/marketing/7.jpg" class="o-big-image" />
-                <div class="o-cover">
-                    <img alt="" src="core/t.png" data-opie-src="assets/img/gallery/marketing/7.jpg"class="o-thumb-image" />
-                    <div class="o-cover-bg"></div>
-                </div>
-            </div>
-
             <div class="o-box" data-opie-filter="second">
                 <img alt="" src="core/t.png" data-opie-src="assets/img/gallery/ceramics/1.jpg" class="o-big-image" />
                 <div class="o-cover">
@@ -304,8 +264,6 @@
                     <img alt="" src="core/t.png" data-opie-src="assets/img/gallery/fineart/11.jpg"class="o-thumb-image" />
                     <div class="o-cover-bg"></div>
             </div>-->
-        </div>
-    </div>
     </section>
 
     <section id="resume" class="long-block light">
@@ -461,54 +419,54 @@ Check out things I've made in my Etsy store <a href="http://www.etsy.com/shop/CD
     <script type="text/javascript" src="assets/js/scripts.js"></script>
     <script type="text/javascript" src="assets/js/vex.js"></script>
     <script>vex.defaultOptions.className = 'vex-theme-os';</script>
-    <script type="text/javascript" src="core/jQuery.easing.min.js"></script>
-    <script type="text/javascript" src="core/jQuery.Opie.PortfolioGallery.min.js"></script>
 
-    <script>
-      $(document).ready(function() {
-        $(".opie-portfolio").OpiePortfolioGallery({
-               maxBoxSize : 195,
-               loadMore : 6,
-               boxMovementDuration : 600,
-               delayIncrease : 25,
-               delayStart : 0,
-               maxDelay : 300,
-               scrollingAid : false,
-               boxPositionEasing : 'easeOutSine',
-               extraInfoOpenDuration : 450,
-               extraInfoOpenEasing : 'easeOutSine',
-               extraInfoCloseDuration : 400,
-               extraInfoCloseEasing : 'easeOutSine',
-               boxOpenEasing : 'easeOutSine',
-               boxOpenDuration : 600,
-               boxCloseEasing : 'easeOutSine',
-               boxCloseDuration : 450,
-               userCSS3Accelerate : false,
-               filterNavSelector : '#portfolioNav a',
-               dontResizeThumbs : false,
-               useCentering : false
-           });
-        $("#submitContactButton").click(function(e) {
-          e.preventDefault();
-          $.ajax({
-                        url : "send_form_email.php",
-                        type: "POST",
-                        data: $("#subsc").serialize(),
-                        success: function(data, textStatus, jqXHR)
-                        {
-                            vex.dialog.alert({
-                                     message: 'Thank you!  I\'ll get back to you soon!'
-                            });
-                        },
-                        error: function (jqXHR, textStatus, errorThrown)
-                        {
-                            vex.dialog.alert({
-                                     message: 'ERROR: Message Unable To Be Sent.  Please Try Again Later.'
-                             });
-                        }
-                });
-        });
-    });
-    </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="core/lightbox/dist/simple-lightbox.js"></script>
+<script>
+	$(function(){
+		var $gallery = $('.gallery a').simpleLightbox();
+
+		$gallery.on('show.simplelightbox', function(){
+			console.log('Requested for showing');
+		})
+		.on('shown.simplelightbox', function(){
+			console.log('Shown');
+		})
+		.on('close.simplelightbox', function(){
+			console.log('Requested for closing');
+		})
+		.on('closed.simplelightbox', function(){
+			console.log('Closed');
+		})
+		.on('change.simplelightbox', function(){
+			console.log('Requested for change');
+		})
+		.on('next.simplelightbox', function(){
+			console.log('Requested for next');
+		})
+		.on('prev.simplelightbox', function(){
+			console.log('Requested for prev');
+		})
+		.on('nextImageLoaded.simplelightbox', function(){
+			console.log('Next image loaded');
+		})
+		.on('prevImageLoaded.simplelightbox', function(){
+			console.log('Prev image loaded');
+		})
+		.on('changed.simplelightbox', function(){
+			console.log('Image changed');
+		})
+		.on('nextDone.simplelightbox', function(){
+			console.log('Image changed to next');
+		})
+		.on('prevDone.simplelightbox', function(){
+			console.log('Image changed to prev');
+		})
+		.on('error.simplelightbox', function(e){
+			console.log('No image found, go to the next/prev');
+			console.log(e);
+		});
+	});
+</script>
 </body>
 </html>
