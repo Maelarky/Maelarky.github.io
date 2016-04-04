@@ -15,7 +15,7 @@
 .opie-portfolio .o-box.active img.o-big-image{ display:block;width:auto;height:auto;}
 .opie-portfolio .o-box .o-big-image-wrapper{ position:relative;margin:0;padding:0px;width:auto;height:auto;overflow:hidden;}
 .opie-portfolio .o-box.zoomed .o-big-image-wrapper{width:auto !important;height:auto !important}
-.opie-portfolio .o-box img.o-thumb-image{ position:absolute;top:0;left:0;border:0;width:100%;height:auto;background:none;max-width:195px;max-height:195px}
+.opie-portfolio .o-box img.o-thumb-image{ position:absolute;top:0;left:0;border:0;width:100%;height:auto;background:none;max-width:150px;max-height:195px}
 .opie-portfolio .o-box img.o-thumb-image.auto{ position:absolute;top:0;left:0;border:0;max-width:none !important;max-height:none !important}
 .opie-portfolio .o-box img.o-thumb-image.auto.width{ width:100%;height:auto;top:50%;}
 .opie-portfolio .o-box img.o-thumb-image.auto.height{ width:auto;height:100%;left:50%;}
